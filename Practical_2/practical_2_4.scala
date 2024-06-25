@@ -13,7 +13,9 @@ object Main {
     var bestPrice = 5.0
     var maxProfit = Double.MinValue
 
-    for (i <- 5.0 to 100.0 by 1.0) {
+    var i: Int = 0
+    for (i <- 5 to 100 by 1) {
+      val price = i.toDouble
       val currAttendees = attendees(i)
       val currExpense = expense(currAttendees)
       val currIncome = income(i)
